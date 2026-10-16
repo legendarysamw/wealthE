@@ -1,6 +1,6 @@
 import { useState, useMemo } from 'react';
 import {
-  LineChart, Line, AreaChart, Area, BarChart, Bar,
+  LineChart, Line, AreaChart, Area,
   XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart, Pie, Cell
 } from 'recharts';
 import {
@@ -19,12 +19,7 @@ interface IncomeStream {
   type: 'active' | 'passive' | 'portfolio';
 }
 
-interface Scenario {
-  name: string;
-  savingsRate: number;
-  investmentReturn: number;
-  years: number;
-}
+
 
 function App() {
   // Core financial inputs
